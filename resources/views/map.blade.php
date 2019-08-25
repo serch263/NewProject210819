@@ -2,11 +2,17 @@
 <html>
 <head>
     <title></title>
+
+    <head>
+        {!! $map['js'] !!}
+    </head>
+
 </head>
 <body>
 
     <div class="container">
-        <h1><a href="/map">Map</a></h1>
+            {!! $map['html'] !!}
+        </div>
     </div>
 
 </body>

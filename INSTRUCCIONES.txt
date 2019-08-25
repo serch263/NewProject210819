@@ -1,0 +1,26 @@
+***INTRUCCIONES PARA EL FUNCIONAMIENTO DEL PROGRMA
+1- Instalar composerhttps://getcomposer.org/download/   ->  Composer-Setup.exe
+2- Descargar gitHub https://desktop.github.com
+3- Clonar el repositorio https://github.com/serch263/NewProject210819.git
+
+
+***INSTALACION DEL PLUGNIN
+1- https://github.com/farhanwazir/laravelgooglemaps
+
+
+***FUNCIONAMIENTO DEL PROGRAMA
+1- .env Configuracion a conexión a la DB lineas (12 - 14)
+2- database/migrations/2019_08_24_220420_create_gmaps_geocache_table.php creacion de la tabla que almacena las ubicaciones
+3- app/Gmaps_geocache.php archivo para mapear los atributos de la tabla
+4- database/seeds/DatabaseSeeder.php archivo para asignar el nombre de la clase, la cual se ejecutara para la creacion de nuevos registros
+5- database/seeds/Gmaps_geocacheTableSeeder.php archivo que contiene los registros a insertar en la tabla
+6- routes/web.php archivo que contiene las rutas URL
+7- welcome.blade.php vista principal que se muestra al inicio
+8- app/Http/Controllers/MapController.php controlador que realiza la logica para mostrar el mapa con las ubicaciones
+9- map.blade.php vista que muestra el mapa con las ubicaciones
+
+
+***LEVANTAR EL SERVIDOR
+1- php artisan migrate:fresh --seed
+2- php artisan serve
+3- Ir al navegador con la url y puerto que indica
