@@ -9,6 +9,6 @@ class Gmaps_geocache extends Model
     protected $table = 'gmaps_geocache';
 
     protected $fillable = [
-        'address', 'latitude', 'longitude',
+        'address', 'latitude', 'longitude', 'id_user'
     ];
 }

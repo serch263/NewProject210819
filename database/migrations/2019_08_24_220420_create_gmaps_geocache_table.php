@@ -18,6 +18,7 @@ class CreateGMapsGeoCacheTable extends Migration
             $table->text('address');
             $table->string('latitude');
             $table->string('longitude');
+            $table->integer('id_user');
             $table->timestamps();
         });
     }
